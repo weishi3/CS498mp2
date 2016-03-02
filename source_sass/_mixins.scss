@@ -1,0 +1,39 @@
+// Insert your mixins
+@mixin transfer {
+  0%   {background-color: darkgoldenrod;}
+  25%  {background-color: yellow;}
+  50%  {background-color: darkgray;}
+  100% {background-color: green;}
+}
+
+@mixin transition($second) {
+  -webkit-transition: all $second s;
+  -moz-transition: all $second s;
+  -ms-transition: all $second s;
+  -o-transition: all $second s;
+  transition: all $second s;
+}
+
+@mixin transform50 {
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+
+@mixin radius50 {
+  webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  ms-border-radius: 50%;
+  border-radius: 50%;
+}
+
+@mixin setradius10 {
+  webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  ms-border-radius: 10px;
+  border-radius: 10px;
+}
+
